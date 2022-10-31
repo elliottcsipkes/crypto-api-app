@@ -1,6 +1,36 @@
 .container{
     max-width: 1140px;
     margin: auto;
+    color: #f4f4f4;
+}
+
+.page-btns{
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    max-width: 97%;
+}
+.page-btns button{
+    background-color: transparent;
+    border: none;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    color: #f4f4f4;
+    font-size: .9rem;
+}
+.page-btns button:hover{
+    color: #6900ff;
+}
+.bot{
+    margin-bottom: 20px;
+    margin-top: -10px;
 }
 
 .heading{
@@ -28,6 +58,7 @@
     border-radius: 8px;
     margin: 2rem 1rem;
     padding: .7rem 1rem;
+    color: #f4f4f4;
 }
 .coin-row:hover{
     transform: scale(1.04);
@@ -46,6 +77,14 @@ img{
     align-items: center;
 }
 
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: .8rem;
+    height: 40px;
+}
 @media screen and (max-width: 720px){
     .hide-mobile{
         display: none;

@@ -9,6 +9,29 @@
     border-radius: 8px;
 }
 
+.coin-container{
+    max-width: 740px;
+    margin: auto;
+}
+
+.back-btn button{
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    color: #f4f4f4;
+    font-size: .9rem;
+}
+.back-btn button:hover{
+    color: #6900ff;
+}
+
 .rank{
     margin: .5 0;
 

@@ -1,9 +1,10 @@
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import "./Coin.css";
 import CoinItem from "../components/CoinItem";
 import DOMPurify from "dompurify";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 const Coin = () => {
   const params = useParams();
@@ -22,9 +23,20 @@ const Coin = () => {
       });
   }, []);
 
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <div>
       <div className="coin-container">
+        <div className="back-btn">
+          <button className="btn" onClick={goBack}>
+            <IoMdArrowRoundBack /> Go Back
+          </button>
+        </div>
         <div className="content">
           <h1>{coin.name}</h1>
         </div>

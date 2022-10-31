@@ -2,6 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
+}
+
+.icon-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .icon {
