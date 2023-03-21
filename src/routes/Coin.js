@@ -108,6 +108,7 @@ const Coin = () => {
                       {coin.market_data.price_change_percentage_14d_in_currency.usd.toFixed(
                         1
                       )}
+                      %
                     </p>
                   ) : null}
                 </td>
